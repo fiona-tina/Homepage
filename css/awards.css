@@ -1,0 +1,91 @@
+.clear {
+    clear: both;
+    visibility: hidden;
+}
+
+body {
+    width: 100%;
+}
+
+@media screen and (min-width: 501px) {
+    .window {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.window h2 {
+    color: #3b4665;
+    margin: 2%;
+    font-family: Futura;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#right {
+    width: 100%;
+    padding: 1%;
+    margin: auto;
+    color: #3b4665;
+}
+
+#right table {
+    clear: both;
+    width: 100%;
+}
+
+/*#left {*/
+/*padding: 1%;*/
+/*width: 48%;*/
+/*float: left;*/
+/*color: #3b4665;*/
+/*}*/
+
+.time {
+    text-align: center;
+    border: solid white 2px;
+    background-color: #3b4665;
+    color: white;
+    width: 15%;
+    font-family: Georgia;
+    font-size: 1.2em;
+}
+
+#right tr {
+    height: 4em;
+    word-spacing: 0.3em;
+    float: none;
+    width: 100%;
+}
+
+.name {
+    padding-left: 3em;
+    border: solid white 2px;
+    background-color:lavender;
+    color: #3b4665;
+    font-family: "Yuanti SC";
+    font-size: 1.2em;
+    width: 60%;
+}
+
+.level {
+    padding-left: 2em;
+    font-family: Monaco;
+    font-style: italic;
+    background-color: rgba(226, 235, 255, 0.6);
+    border: white 2px solid;
+    width: 25%;
+}
+
+@media screen and (max-width: 500px) {
+    .window h2{
+        text-align: center;
+        margin-top: -6%;
+        margin-bottom: 5%;
+    }
+
+    .window{
+        width: 95%;
+        margin: auto;
+    }
+}

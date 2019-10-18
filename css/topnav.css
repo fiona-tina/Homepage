@@ -1,0 +1,277 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.topnav {
+    background: rgba(171, 177, 217, 0.2);
+    overflow: visible;
+    margin: 0;
+}
+
+#dropbox1 {
+    float: left;
+    overflow: visible;
+    height: 100%;
+}
+
+#dropbox2 {
+    float: left;
+    overflow: visible;
+    height: 100%;
+}
+
+.topnav img {
+    height: 85%;
+    margin: 5px;
+    float: left;
+}
+
+.topnav a {
+    font-family: "Apple Chancery";
+    display: block;
+    text-align: center;
+    padding: 15px;
+    height: 100%;
+}
+
+@media screen and (min-width: 757px) {
+    .topnav a {
+        font-size: 1.5em;
+        height: 100%;
+    }
+
+    .topnav {
+        height: 4em;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 756px) {
+    .topnav a {
+        font-size: 1.1em;
+        height: 100%;
+    }
+
+    .topnav {
+        height: 3.5em;
+    }
+}
+
+@media screen and (min-width: 612px) and (max-width: 640px) {
+    .topnav a {
+        font-size: 1em;
+        height: 100%;
+    }
+
+    .topnav {
+        height: 3.3em;
+    }
+}
+
+@media screen and (min-width: 549px) and (max-width: 611px) {
+    .topnav a {
+        font-size: 0.8em;
+        height: 100%;
+    }
+
+    .topnav {
+        height: 2.8em;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 548px) {
+    .topnav a {
+        font-size: 0.8em;
+        height: 100%;
+    }
+
+    .topnav img {
+        display: none;
+    }
+
+    .topnav {
+        height: 2.8em;
+    }
+}
+
+.right {
+    overflow: hidden;
+    float: right;
+}
+
+.inactive {
+    text-decoration: none;
+    color: #7388c5;
+    float: left;
+}
+
+.active {
+    color: #7388c5;
+    text-decoration: underline;
+    /*change!!!*/
+    float: left;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #e3e7f1;
+    border-radius: 10px;
+    color: #333d58;
+}
+
+/* Add an active class to highlight the current page */
+.home {
+    background-color: #7388c5;
+    color: white;
+    float: left;
+}
+
+.home a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.right {
+    overflow: visible;
+    height: 100%;
+}
+
+.dropdown-menu {
+    overflow: visible;
+    position: absolute;
+}
+
+.dropdown-menu li:hover {
+    border-radius: 0;
+    background-color: #e3e7f1;
+}
+
+@media only screen and (min-width: 501px) {
+    .dropres {
+        display: none;
+    }
+}
+
+/* When the screen is less than 500 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media only screen and (max-width: 500px) {
+    .topnav a:not(.home) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        position: absolute;
+        right: 0;
+        overflow: visible;
+        float: right;
+        display: block;
+        height: 4em;
+    }
+
+    a.icon:hover {
+        cursor: pointer;
+        border-radius: 0;
+        height: inherit;
+    }
+
+    #dropbox1, #dropbox2 {
+        display: none;
+    }
+
+    .dropres {
+        display: block;
+    }
+
+    .topnav img {
+        height: 3em;
+    }
+
+    .right, .container-fluid {
+        width: 100%;
+        padding: 0;
+    }
+
+    .second {
+        color: gray;
+        margin-left: 20px;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. */
+@media only screen and (max-width: 500px) {
+    .topnav.responsive {
+        position: relative;
+        width: 100%;
+        overflow: visible;
+        z-index: 999;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        height: inherit;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive a:not(.home) {
+        background-color: white;
+    }
+
+    .topnav.responsive a:hover {
+        background-color: #e3e7f1;
+    }
+
+    .topnav.responsive img {
+        display: none;
+    }
+
+    #dropbox1 {
+        float: none;
+        overflow: visible;
+    }
+
+    #dropbox2 {
+        float: none;
+        overflow: visible;
+    }
+}
+
+.footer{
+    width: 100%;
+    position: inherit;
+    background-color: rgba(59, 70, 99, 0.73);
+    height: 4em;
+}
+
+.copyright{
+    margin: 1em 0 0 2em;
+    color: #f6f6f6;
+    font-family: Courier;
+    float: left;
+}
+
+.top, .contact{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 0.8%;
+    margin: 0.5%;
+    background-color: #e4edff;
+    border-radius: 20px;
+    float: right;
+}
+
+.clear{
+    clear: both;
+    visibility: hidden;
+}

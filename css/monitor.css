@@ -1,0 +1,106 @@
+body{
+    width: 100%;
+}
+
+.exSec h4 {
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.exSec p, .exSec ul {
+    display: none;
+}
+
+.expanded p, .expanded ul {
+    display: block;
+}
+
+.title {
+    width: 92%;
+    margin: auto;
+    color: #3b4665;
+}
+
+.title h1 {
+    margin-top: 2%;
+    font-family: Futura;
+    font-weight: bold;
+}
+
+.title h2 {
+    margin: 2%;
+    font-family: Futura;
+}
+
+.title p {
+    font-family: Georgia;
+    font-size: 1.2em;
+    margin-left: 2%;
+}
+
+.intro {
+    font-family: Georgia;
+    margin: 2% 4%;
+    font-size: 1.3em;
+    word-spacing: 2px;
+    text-indent: 2em;
+    color: #566691;
+    width: 92%;
+}
+
+#cls1{
+    width: 80%;
+    margin: 4% 10%;
+    border-radius: 100px;
+    box-shadow: 10px 10px 10px lavender;
+}
+
+.events {
+    margin: 0 4%;
+}
+
+.events h3 {
+    padding: 10px;
+    width: fit-content;
+    background-color: #97aeee;
+    border-radius: 15px;
+    font-family: Futura;
+    color: rgb(231, 248, 255);
+}
+
+.events h4 {
+    font-family: Futura;
+    text-shadow: #a3bbf8 1.5px 1px 1px;
+    color: #3b4665;
+    font-size: 1.6em;
+}
+
+.events p {
+    font-size: 1.2em;
+    margin: 2%;
+    text-indent: 2em;
+    color: #3b4665;
+}
+
+#ice img {
+    float: left;
+    width: 60%;
+    margin: 3%;
+    border-radius: 20px;
+}
+
+.clear {
+    clear: both;
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 500px) {
+    .title{
+        text-align: center;
+    }
+
+    img{
+        float: none;
+    }
+}
