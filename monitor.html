@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Class Monitor</title>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/monitor.css">
+    <script src="js/topnav.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/expand.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="home">Home</a>
+    <img src="img/logo-topnav.png"/>
+    <div class="right container-fluid">
+        <div id="dropbox1">
+            <a href="#" class="inactive dropdown-toggle" data-toggle="dropdown" role="button">Portfolios
+                <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="academic.html#portfolio1">port1</a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="monitor.html#ice">port2</a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="aidEdu.html">port3</a></li>
+            </ul>
+        </div>
+        <div class="dropres">
+            <a href="#" class="inactive">Portfolios</a>
+            <a href="academic.html#portfolio1" class="second"> port1</a>
+            <a href="monitor.html#ice" class="second"> port2</a>
+            <a href="aidEdu.html" class="second"> port3</a>
+        </div>
+        <a href="academic.html" class="inactive">Academic</a>
+
+        <div id="dropbox2">
+            <a href="#" class="active dropdown-toggle" data-toggle="dropdown" role="button">Extracurricular
+                <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="awards.html">Awards List</a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="monitor.html">Class Monitor</a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="minister.html">Minister of Student Union</a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="ping.html">Ping-Pong Team Member</a></li>
+            </ul>
+        </div>
+        <div class="dropres">
+            <a href="#" class="active">Extracurricular</a>
+            <a href="awards.html" class="second">Awards List</a>
+            <a href="monitor.html" class="second active"> Class Monitor</a>
+            <a href="minister.html" class="second"> Minister of Student Union</a>
+            <a href="ping.html" class="second"> Ping-Pong Team Member</a>
+        </div>
+        <a href="social.html" class="inactive">Social</a>
+        <a href="fusion.html" class="inactive">Fused</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="expandMobileNav()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<hr class="clear">
+<div class="title">
+    <h1>Extracurricular -- Role 1</h1>
+    <h2>Class Monitor of Software Engineering (Class of 2020)</h2>
+    <p>09.2019 ~ </p>
+</div>
+<div class="intro">
+    I'm honored to have been elected as the Class Monitor of Software Engineering since 09.2019 (the first semester of
+    freshman year) and is responsible for the whole class for 2 1/2 years. I unit our class as a big family of 94
+    persons and treat every classmate as my family member. During these years, I build up the team of class committee
+    which collaborates better & better and work effectively. I organized and was in charge of a series of class-wide
+    activities to bring the whole class together timely and enrich every members campus life.
+    <img src="img/class1.jpg" id="cls1">
+</div>
+<div class="events">
+    <h3>Events</h3>
+    <div id="ice">
+        <h4 onclick="expandDiv('ice')">Ice Breaking * (portfolio)</h4>
+
+        <p>During the orientation week when I was a freshmen (08.2016), just being elected as the monitor of Class 2020
+            Software Engineering, me and my team decided to plan an ice-breaking activity to connect all our classmates
+            together faster and keep the class solid.</p>
+        <img src="img/ice1.jpg" alt="ice-breaking">
+        <p>But the problem is that it was already in the middle of the orientation of the week and we should make the
+            event before the second week so as not to influence anyone’s classes. The time is very limited and our team
+            has just formed for 2 days.</p>
+        <p>So our approach is to contact the event planners of some seniors in our school and get their former plans.
+            Then we changed the rules and modes in a similar frame, we worked until 3 a.m. on that day and sent it to
+            the seniors who gave us their plans to ask them for suggestions. We had a few conflicts at first, which was
+            normal, due to the lack of experience. After getting some feedback, we modified the plan into version 4,
+            and at last this first event of our class went perfectly smooth.
+        </p>
+        <hr class="clear">
+    </div>
+    <div id="dumpling" class="exSec">
+        <h4 onclick="expandDiv('dumpling')">Making Dumplings at the Winter Solstice</h4>
+        <p>Description</p>
+    </div>
+    <div id="girl" class="exSec">
+        <h4 onclick="expandDiv('girl')">Girls Festival</h4>
+        <p>Description</p>
+    </div>
+    <div id="christmas" class="exSec">
+        <h4 onclick="expandDiv('christmas')">Christmas Series</h4>
+        <p>Description</p>
+    </div>
+
+</div>
+</body>
+</html>
